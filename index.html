@@ -1,85 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>RUBI</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>RUBI - Loja</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header / Menu -->
-    <header>
-        <div class="logo-banner">
-            <img src="assets/images/logo/logo.png" alt="RUBI" id="logo">
-            <h2 id="frase-banner">PORQUE CADA MULHER É ÚNICA</h2>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="lingerias.html">Lingeries</a></li>
-                <li><a href="moda-feminina.html">Moda Feminina</a></li>
-                <li><a href="cuidados.html">Cuidados Íntimos</a></li>
-                <li><a href="contato.html">Contato / Localização</a></li>
-                <li><a href="sobre.html">Sobre a Rubi</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Banner com logo e frase -->
+  <header>
+    <div class="banner">
+      <img src="assets/images/logo/LOGO.jpg" alt="RUBI Logo" class="logo">
+      <h1>PORQUE CADA MULHER É ÚNICA</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Lingeries</a></li>
+        <li><a href="#">Moda Feminina</a></li>
+        <li><a href="#">Cuidados Íntimos</a></li>
+        <li><a href="#">Contato / Localização</a></li>
+        <li><a href="#">Sobre a Rubi</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Banner principal -->
-    <section id="banner">
-        <h2 id="frase-banner">PORQUE CADA MULHER É ÚNICA</h2>
-    </section>
+  <!-- Seção Produtos -->
+  <section id="produtos">
+    <h2>Produtos</h2>
+    <div class="produtos-grid">
 
-    <!-- Seção Novidades -->
-    <section id="novidades">
-        <h3>Novidades da Rubi</h3>
-        <div class="cards-container">
-            <!-- Aqui vamos colocar os cards de produtos -->
-        </div>
-    </section>
+      <!-- BABYDOOL CAROL AZUL FROZEN E ROSA -->
+      <div class="produto-card">
+        <img src="assets/images/produtos/BABYDOOLCAROLAZULFROZENEROSA.jpg" alt="BABYDOOL CAROL AZUL FROZEN E ROSA">
+        <h3>BABYDOOL CAROL AZUL FROZEN E ROSA</h3>
+        <p>Preço: R$79,90 | PIX: R$69,90</p>
+        <p>Tamanho: M | Estoque: 1</p>
+        <label>Quantidade:
+          <input type="number" value="1" min="1" max="1">
+        </label>
+        <button>Adicionar ao carrinho</button>
+      </div>
 
-    <!-- Seção Categorias -->
-    <section id="categorias">
-        <h3>Categorias</h3>
-        <ul class="categorias-lista">
-            <li>Lingeries</li>
-            <li>Pijamas</li>
-            <li>T-shirts</li>
-            <li>Vestidos</li>
-            <li>Cuidados Íntimos</li>
+      <!-- BABYDOOL CAROL VERMELHO -->
+      <div class="produto-card">
+        <img src="assets/images/produtos/BABYDOOLCAROLVERMELHO.jpg" alt="BABYDOOL CAROL VERMELHO">
+        <h3>BABYDOOL CAROL VERMELHO</h3>
+        <p>Preço: R$79,90 | PIX: R$69,90</p>
+        <p>Tamanho: M | Estoque: 1</p>
+        <label>Quantidade:
+          <input type="number" value="1" min="1" max="1">
+        </label>
+        <button>Adicionar ao carrinho</button>
+      </div>
+
+      <!-- BABYDOOL LIA AZUL -->
+      <div class="produto-card">
+        <img src="assets/images/produtos/BABYDOOLLIAAZUL.jpg" alt="BABYDOOL LIA AZUL">
+        <h3>BABYDOOL LIA AZUL</h3>
+        <p>Preço: R$79,90 | PIX: R$69,90</p>
+        <p>Tamanho: G | Estoque: 1</p>
+        <label>Quantidade:
+          <input type="number" value="1" min="1" max="1">
+        </label>
+        <button>Adicionar ao carrinho</button>
+      </div>
+
+      <!-- BABYDOOL LIA PRETO -->
+      <div class="produto-card">
+        <img src="assets/images/produtos/BABYDOOLLIAPRETO.jpg" alt="BABYDOOL LIA PRETO">
+        <h3>BABYDOOL LIA PRETO</h3>
+        <p>Preço: R$79,90 | PIX: R$69,90</p>
+        <p>Tamanho: M | Estoque: 1</p>
+        <label>Quantidade:
+          <input type="number" value="1" min="1" max="1">
+        </label>
+        <button>Adicionar ao carrinho</button>
+      </div>
+
+      <!-- BABYDOOL LIA ROXO -->
+      <div class="produto-card">
+        <img src="assets/images/produtos/BABYDOOLLIAROXO.jpg" alt="BABYDOOL LIA ROXO">
+        <h3>BABYDOOL LIA ROXO</h3>
+        <p>Preço: R$79,90 | PIX: R$69,90</p>
+        <p>Tamanho: P | Estoque: 1</p>
+        <label>Quantidade:
+          <input type="number" value="1" min="1" max="1">
+        </label>
+        <button>Adicionar ao carrinho</button>
+      </div>
+
+      <!-- BABYDOOL LIA VERMELHO -->
+      <div class="produto-card">
+        <img src="assets/images/produtos/BABYDOOLLIAVERMELHO.jpg" alt="BABYDOOL LIA VERMELHO">
+        <h3>BABYDOOL LIA VERMELHO</h3>
+        <p>Preço: R$79,90 | PIX: R$69,90</p>
+        <p>Tamanho: G | Estoque: 1</p>
+        <label>Quantidade:
+          <input type="number" value="1" min="1" max="1">
+        </label>
+        <button>Adicionar ao carrinho</button>
+      </div>
+
+      <!-- CALCINHA FIO -->
+      <div class="produto-card">
+        <img src="assets/images/produtos/CALCINHAFIO.jpg" alt="CALCINHA FIO">
+        <h3>CALCINHA FIO</h3>
+        <p>Preço: R$18,50</p>
+        <p>Tamanhos e estoque:</p>
+        <ul>
+          <li>P | 2 unidades | Cor aleatória</li>
+          <li>M | 2 unidades | Cor aleatória</li>
+          <li>G | 1 unidade | Cor aleatória</li>
         </ul>
-    </section>
+        <label>Quantidade:
+          <input type="number" value="1" min="1">
+        </label>
+        <button>Adicionar ao carrinho</button>
+      </div>
 
-    <!-- Cards de produtos (exemplo de 1 card, vamos replicar para todos) -->
-    <section id="produtos">
-        <div class="card">
-            <img src="assets/images/produtos/BABYDOOLCAROLAZULFROZENEROSA.jpg" alt="BABYDOOL CAROL AZUL FROZEN E ROSA">
-            <h4>BABYDOOL CAROL AZUL FROZEN E ROSA</h4>
-            <p>Preço: R$79,90</p>
-            <p>PIX: R$69,90</p>
-            <p>Tamanho: M</p>
-            <p>Estoque: 1</p>
-            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
-        </div>
+      <!-- CHAMISE PRETA -->
+      <div class="produto-card">
+        <img src="assets/images/produtos/CHAMISEPRETA.jpg" alt="CHAMISE PRETA">
+        <h3>CHAMISE PRETA</h3>
+        <p>Preço: R$104,90 | PIX: R$94,90</p>
+        <p>Tamanho: M | Estoque: 1</p>
+        <label>Quantidade:
+          <input type="number" value="1" min="1" max="1">
+        </label>
+        <button>Adicionar ao carrinho</button>
+      </div>
 
-        <div class="card">
-            <img src="assets/images/produtos/BABYDOOLCAROLVERMELHO.jpg" alt="BABYDOOL CAROL VERMELHO">
-            <h4>BABYDOOL CAROL VERMELHO</h4>
-            <p>Preço: R$79,90</p>
-            <p>PIX: R$69,90</p>
-            <p>Tamanho: M</p>
-            <p>Estoque: 1</p>
-            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
-        </div>
+      <!-- CONJUNTOS, PIJAMAS, SUTIÃS, TSHIRTS, VESTIDOS, CUIDADOS ÍNTIMOS, PERFUMES -->
+      <!-- Aqui você vai replicar o mesmo card seguindo o mesmo padrão, trocando imagem, nome, preço, tamanhos e estoque -->
 
-        <!-- Aqui você vai replicar para todos os produtos -->
-    </section>
+      <!-- Exemplo: -->
+      <div class="produto-card">
+        <img src="assets/images/produtos/CONJUNTOBARBARAROSA.jpg" alt="CONJUNTO BARBARA ROSA">
+        <h3>CONJUNTO BARBARA ROSA</h3>
+        <p>Preço: R$94,90 | PIX: R$84,90</p>
+        <p>Tamanho: P | Estoque: 1</p>
+        <label>Quantidade:
+          <input type="number" value="1" min="1" max="1">
+        </label>
+        <button>Adicionar ao carrinho</button>
+      </div>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>RUBI – Rua Ronald de Carvalho, 15 – Universitárias, Campo Grande – MS</p>
-        <p>WhatsApp: (67) 99870-4864</p>
-    </footer>
+      <!-- Continue adicionando todos os produtos seguindo este padrão -->
 
-    <script src="app.js"></script>
+    </div>
+  </section>
+
+  <footer>
+    <p>Loja física: Rua Ronald de Carvalho, 15 – Universitárias, Campo Grande – MS</p>
+    <p>WhatsApp: (67) 99870-4864</p>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
