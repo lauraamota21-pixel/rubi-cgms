@@ -1,6 +1,4 @@
-/* =========================
-   RESET E BASE
-========================= */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -8,200 +6,243 @@
   font-family: 'Arial', sans-serif;
 }
 
+/* Body */
 body {
   background-color: #fff;
   color: #333;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-/* =========================
-   HEADER E MENU
-========================= */
+/* Header */
 header {
-  background-color: #7B0A0A; /* bordô */
-  color: #FFD700; /* dourado */
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  border-bottom: 2px solid #800000; /* bordô */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-header h1 {
-  font-family: 'Georgia', serif;
-  font-size: 2rem;
+header .logo-banner {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-nav {
-  margin-top: 10px;
+header .logo {
+  height: 60px;
 }
 
-nav a {
-  color: #FFD700;
+header .slogan {
+  color: #800000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav ul li a {
   text-decoration: none;
-  margin: 0 10px;
+  color: #800000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d4af37; /* dourado */
+}
+
+#cart-button {
+  background-color: #800000;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
   font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
+#cart-button:hover {
+  background-color: #d4af37;
+  color: #800000;
 }
 
-/* =========================
-   BANNER
-========================= */
-.banner {
-  background: url('assets/images/logo/LOGO.jpg') center/cover no-repeat;
-  height: 300px;
-  display: flex;
-  align-items: center;
+/* Carrinho Modal */
+.cart-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
   justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.cart-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
   position: relative;
 }
 
-.banner h2 {
-  color: #FFD700;
-  font-size: 1.8rem;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
-  animation: fadeIn 3s ease-in-out infinite alternate;
+#close-cart {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-@keyframes fadeIn {
-  from {opacity: 0.5;}
-  to {opacity: 1;}
+.cart-total {
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: right;
+  font-size: 1.2rem;
 }
 
-/* =========================
-   SEÇÕES
-========================= */
+#checkout-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #800000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#checkout-button:hover {
+  background-color: #d4af37;
+  color: #800000;
+}
+
+/* Seções */
 section {
-  padding: 30px 20px;
+  padding: 40px 20px;
 }
 
-h2 {
-  font-size: 1.6rem;
-  color: #7B0A0A;
-  margin-bottom: 20px;
+section h2 {
   text-align: center;
+  margin-bottom: 25px;
+  color: #800000;
 }
 
-/* =========================
-   PRODUTOS
-========================= */
-#produtos-container {
+/* Produtos */
+.products-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
-.produto-card {
-  border: 1px solid #eee;
+/* Card */
+.product-card {
+  border: 1px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
   padding: 15px;
   text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
   background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.produto-card:hover {
+.product-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.produto-card img {
+.product-card img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: 220px;
+  object-fit: cover;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
-.produto-card h3 {
-  color: #7B0A0A;
-  font-size: 1.1rem;
-  margin-bottom: 5px;
+.product-card h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #800000;
 }
 
-.produto-card p {
+.product-card .price {
+  font-weight: bold;
   margin-bottom: 8px;
 }
 
-.produto-card button {
-  background-color: #7B0A0A;
-  color: #FFD700;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
+.product-card .price .pix {
+  color: #d4af37;
   font-weight: bold;
-  transition: background-color 0.2s ease;
 }
 
-.produto-card button:hover {
-  background-color: #a00b0b;
-}
-
-/* =========================
-   CORES BOLINHAS
-========================= */
-.color-dot {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  margin: 0 3px;
-  border: 1px solid #ccc;
-}
-
-/* =========================
-   CARRINHO
-========================= */
-#carrinho {
-  position: fixed;
-  right: 20px;
-  top: 80px;
-  width: 300px;
-  background-color: #fff;
-  border: 1px solid #eee;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  display: none;
-  z-index: 1000;
-}
-
-#carrinho h3 {
-  color: #7B0A0A;
+.product-card .colors {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
   margin-bottom: 10px;
 }
 
-#carrinho button {
-  width: 100%;
-  margin-top: 10px;
+.color-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
 }
 
-/* =========================
-   RODAPÉ
-========================= */
+.product-card .sizes {
+  margin-bottom: 10px;
+}
+
+.product-card .sizes span {
+  display: inline-block;
+  border: 1px solid #800000;
+  padding: 2px 6px;
+  margin: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #800000;
+}
+
+.product-card input[type="number"] {
+  width: 50px;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  background-color: #800000;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.product-card button:hover {
+  background-color: #d4af37;
+  color: #800000;
+}
+
+/* Footer */
 footer {
-  background-color: #7B0A0A;
-  color: #FFD700;
   text-align: center;
   padding: 20px;
-  margin-top: 30px;
-}
-
-/* =========================
-   RESPONSIVO
-========================= */
-@media (max-width: 768px) {
-  #produtos-container {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  }
-
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  .banner h2 {
-    font-size: 1.2rem;
-  }
+  background-color: #800000;
+  color: #fff;
+  font-size: 0.9rem;
 }
