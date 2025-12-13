@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>RUBI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Menu -->
+    <header>
+        <div class="logo-banner">
+            <img src="assets/images/logo/logo.png" alt="RUBI" id="logo">
+            <h2 id="frase-banner">PORQUE CADA MULHER É ÚNICA</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lingerias.html">Lingeries</a></li>
+                <li><a href="moda-feminina.html">Moda Feminina</a></li>
+                <li><a href="cuidados.html">Cuidados Íntimos</a></li>
+                <li><a href="contato.html">Contato / Localização</a></li>
+                <li><a href="sobre.html">Sobre a Rubi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section id="banner">
+        <h2 id="frase-banner">PORQUE CADA MULHER É ÚNICA</h2>
+    </section>
+
+    <!-- Seção Novidades -->
+    <section id="novidades">
+        <h3>Novidades da Rubi</h3>
+        <div class="cards-container">
+            <!-- Aqui vamos colocar os cards de produtos -->
+        </div>
+    </section>
+
+    <!-- Seção Categorias -->
+    <section id="categorias">
+        <h3>Categorias</h3>
+        <ul class="categorias-lista">
+            <li>Lingeries</li>
+            <li>Pijamas</li>
+            <li>T-shirts</li>
+            <li>Vestidos</li>
+            <li>Cuidados Íntimos</li>
+        </ul>
+    </section>
+
+    <!-- Cards de produtos (exemplo de 1 card, vamos replicar para todos) -->
+    <section id="produtos">
+        <div class="card">
+            <img src="assets/images/produtos/BABYDOOLCAROLAZULFROZENEROSA.jpg" alt="BABYDOOL CAROL AZUL FROZEN E ROSA">
+            <h4>BABYDOOL CAROL AZUL FROZEN E ROSA</h4>
+            <p>Preço: R$79,90</p>
+            <p>PIX: R$69,90</p>
+            <p>Tamanho: M</p>
+            <p>Estoque: 1</p>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="card">
+            <img src="assets/images/produtos/BABYDOOLCAROLVERMELHO.jpg" alt="BABYDOOL CAROL VERMELHO">
+            <h4>BABYDOOL CAROL VERMELHO</h4>
+            <p>Preço: R$79,90</p>
+            <p>PIX: R$69,90</p>
+            <p>Tamanho: M</p>
+            <p>Estoque: 1</p>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <!-- Aqui você vai replicar para todos os produtos -->
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>RUBI – Rua Ronald de Carvalho, 15 – Universitárias, Campo Grande – MS</p>
+        <p>WhatsApp: (67) 99870-4864</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
